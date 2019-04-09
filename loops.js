@@ -1,14 +1,18 @@
-function forLoop (array) {
-for (let i = 0; i < 25; i++) {
+// #1 - forLoop
+
+function forLoop (arr) {
+for (i = 0; i < 25; i++) {
   if (i === 1)
   {
-    console.log(`I am ${i} strange loop.`)
+    arr.push(`I am ${i} strange loop.`)
   } else {
-    console.log(`I am ${i} strange loops.`)
+    arr.push(`I am ${i} strange loops.`)
   }
   }
+     return arr
 }
 
+// #2 whileLoop
 function whileLoop (number) {
   while (number > 0) {
     console.log(--number)
@@ -18,10 +22,14 @@ function whileLoop (number) {
 
 var i = 0;
 
+//#4 doWhileLoop
+// let i = 0;
 function incrementVariable() {
   i = i + 1;
   return i;
 }
+
+// console.log(incrementVariable())
 
 function doWhileLoop(number) {
   do {
